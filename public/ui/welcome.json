@@ -12,7 +12,7 @@
         "properties": {
           "id": "xr-button"
         },
-        "dataUid": "uid-4"
+        "dataUid": "uid-2"
       }
     ],
     "properties": {
@@ -24,26 +24,26 @@
     "panel-container": {
       "content": {
         "alignItems": "center",
-        "padding": "2",
-        "width": "50",
+        "padding": "0.2",
+        "width": "5",
         "display": "flex",
         "flexDirection": "column",
         "backgroundColor": "#09090b",
         "borderColor": "#27272a",
-        "borderWidth": "0.15",
-        "borderRadius": 3
+        "borderWidth": "0.015",
+        "borderRadius": 0.3
       }
     },
     "__id__xr-button": {
       "content": {
         "width": "100%",
-        "padding": "1.5",
+        "padding": "0.15",
         "backgroundColor": "#fafafa",
         "color": "#09090b",
-        "borderRadius": 1.5,
-        "borderWidth": "0.1",
+        "borderRadius": 0.15,
+        "borderWidth": "0.01",
         "borderColor": "#e4e4e7",
-        "fontSize": "2.5",
+        "fontSize": "0.25",
         "fontWeight": "medium",
         "textAlign": "center",
         "cursor": "pointer"
@@ -63,31 +63,31 @@
     },
     "__id__xr-button": {
       "start": {
-        "line": 27,
+        "line": 13,
         "column": 2
       },
       "end": {
-        "line": 27,
+        "line": 13,
         "column": 12
       }
     },
     "uid-1": {
       "start": {
-        "line": 42,
+        "line": 27,
         "column": 0
       },
       "end": {
-        "line": 46,
+        "line": 29,
         "column": 6
       }
     },
-    "uid-4": {
+    "uid-2": {
       "start": {
-        "line": 45,
+        "line": 28,
         "column": 2
       },
       "end": {
-        "line": 45,
+        "line": 28,
         "column": 42
       }
     }
