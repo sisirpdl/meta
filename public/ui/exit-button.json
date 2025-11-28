@@ -1,0 +1,90 @@
+{
+  "element": {
+    "type": "container",
+    "sourceTag": "div",
+    "children": [
+      {
+        "sourceTag": "button",
+        "type": "custom",
+        "children": [
+          "Exit to Browser"
+        ],
+        "properties": {
+          "id": "exit-button"
+        },
+        "dataUid": "uid-2"
+      }
+    ],
+    "properties": {
+      "class": "exit-container"
+    },
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "exit-container": {
+      "content": {
+        "padding": "2",
+        "backgroundColor": "#09090b",
+        "borderColor": "#27272a",
+        "borderWidth": "0.15",
+        "borderRadius": 2
+      }
+    },
+    "__id__exit-button": {
+      "content": {
+        "padding": "1.5",
+        "backgroundColor": "#dc2626",
+        "color": "#fafafa",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#991b1b",
+        "fontSize": "2.5",
+        "fontWeight": "medium",
+        "textAlign": "center",
+        "cursor": "pointer"
+      }
+    }
+  },
+  "ranges": {
+    "exit-container": {
+      "start": {
+        "line": 1,
+        "column": 2
+      },
+      "end": {
+        "line": 1,
+        "column": 17
+      }
+    },
+    "__id__exit-button": {
+      "start": {
+        "line": 9,
+        "column": 2
+      },
+      "end": {
+        "line": 9,
+        "column": 14
+      }
+    },
+    "uid-1": {
+      "start": {
+        "line": 22,
+        "column": 0
+      },
+      "end": {
+        "line": 24,
+        "column": 6
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 23,
+        "column": 2
+      },
+      "end": {
+        "line": 23,
+        "column": 51
+      }
+    }
+  }
+}
