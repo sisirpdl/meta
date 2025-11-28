@@ -1,0 +1,28 @@
+<style>
+  .panel-container {
+    align-items: center;
+    padding: 0.1;
+    display: flex;
+    flex-direction: row;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.02;
+    border-radius: 0.2;
+  }
+
+  #xr-button {
+    padding: 0.1;
+    padding-left: 0.2;
+    padding-right: 0.2;
+    background-color: #dc2626;
+    color: #fafafa;
+    border-radius: 0.2;
+    font-size: 0.3;
+    font-weight: medium;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<div class="panel-container">
+  <button id="xr-button">Exit XR</button>
+</div>
