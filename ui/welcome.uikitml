@@ -1,28 +1,47 @@
 <style>
   .panel-container {
-    align-items: center;
-    padding: 0.1;
+    align-items: flex-start;
+    padding: 2;
+    width: 50;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #09090b;
     border-color: #27272a;
-    border-width: 0.02;
-    border-radius: 0.2;
+    border-width: 0.15;
+    border-radius: 3;
   }
 
-  #xr-button {
-    padding: 0.1;
-    padding-left: 0.2;
-    padding-right: 0.2;
-    background-color: #dc2626;
+  .heading {
+    font-size: 4;
+    font-weight: medium;
     color: #fafafa;
-    border-radius: 0.2;
-    font-size: 0.3;
+    text-align: left;
+  }
+
+  .sub-heading {
+    font-size: 2;
+    color: #a1a1aa;
+    text-align: left;
+    margin-top: 0.3;
+  }
+  
+  #xr-button {
+    width: 100%;
+    padding: 1.5;
+    margin-top: 2;
+    background-color: #fafafa;
+    color: #09090b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #e4e4e7;
+    font-size: 2.5;
     font-weight: medium;
     text-align: center;
     cursor: pointer;
   }
 </style>
 <div class="panel-container">
-  <button id="xr-button">Exit XR</button>
+  <span class="heading"> Hello, Immersive Web! </span>
+  <span class="sub-heading"> AR Notes - Place sticky notes on walls in your space</span>
+  <button id="xr-button">Enter XR</button>
 </div>
