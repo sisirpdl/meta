@@ -4,28 +4,6 @@
     "sourceTag": "div",
     "children": [
       {
-        "sourceTag": "span",
-        "type": "custom",
-        "children": [
-          "Hello, Immersive Web!"
-        ],
-        "properties": {
-          "class": "heading"
-        },
-        "dataUid": "uid-2"
-      },
-      {
-        "sourceTag": "span",
-        "type": "custom",
-        "children": [
-          "AR Notes - Place sticky notes on walls in your space"
-        ],
-        "properties": {
-          "class": "sub-heading"
-        },
-        "dataUid": "uid-3"
-      },
-      {
         "sourceTag": "button",
         "type": "custom",
         "children": [
@@ -45,7 +23,7 @@
   "classes": {
     "panel-container": {
       "content": {
-        "alignItems": "flex-start",
+        "alignItems": "center",
         "padding": "2",
         "width": "50",
         "display": "flex",
@@ -56,27 +34,10 @@
         "borderRadius": 3
       }
     },
-    "heading": {
-      "content": {
-        "fontSize": "4",
-        "fontWeight": "medium",
-        "color": "#fafafa",
-        "textAlign": "left"
-      }
-    },
-    "sub-heading": {
-      "content": {
-        "fontSize": "2",
-        "color": "#a1a1aa",
-        "textAlign": "left",
-        "marginTop": "0.3"
-      }
-    },
     "__id__xr-button": {
       "content": {
         "width": "100%",
         "padding": "1.5",
-        "marginTop": "2",
         "backgroundColor": "#fafafa",
         "color": "#09090b",
         "borderRadius": 1.5,
@@ -100,26 +61,6 @@
         "column": 18
       }
     },
-    "heading": {
-      "start": {
-        "line": 13,
-        "column": 2
-      },
-      "end": {
-        "line": 13,
-        "column": 10
-      }
-    },
-    "sub-heading": {
-      "start": {
-        "line": 20,
-        "column": 2
-      },
-      "end": {
-        "line": 20,
-        "column": 14
-      }
-    },
     "__id__xr-button": {
       "start": {
         "line": 27,
@@ -138,26 +79,6 @@
       "end": {
         "line": 46,
         "column": 6
-      }
-    },
-    "uid-2": {
-      "start": {
-        "line": 43,
-        "column": 2
-      },
-      "end": {
-        "line": 43,
-        "column": 54
-      }
-    },
-    "uid-3": {
-      "start": {
-        "line": 44,
-        "column": 2
-      },
-      "end": {
-        "line": 44,
-        "column": 88
       }
     },
     "uid-4": {
