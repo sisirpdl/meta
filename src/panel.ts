@@ -62,7 +62,7 @@ export class PanelSystem extends createSystem({
         } else {
           xrButton.setProperties({ text: "Exit XR" });
           this.panelInXRMode = true;
-          if (obj3D) obj3D.scale.set(0.05, 0.05, 0.05);
+          if (obj3D) obj3D.scale.set(0.005, 0.005, 0.005);
         }
       });
     });
@@ -72,6 +72,13 @@ export class PanelSystem extends createSystem({
     this.queries.welcomePanel.entities.forEach((entity) => {
       const obj3D = entity.object3D;
       if (!obj3D) return;
+
+      // Enforce scale every frame to ensure it sticks
+      if (this.panelInXRMode) {
+        obj3D.scale.set(0.05, 0.05, 0.05);
+      } else {
+        obj3D.scale.set(2.5, 2.5, 2.5);
+      }
 
       if (this.panelInXRMode && this.player.head) {
         // Setup anchor on first XR frame - attach to head like sneaker-builder example
