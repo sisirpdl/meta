@@ -54,12 +54,15 @@ export class PanelSystem extends createSystem({
 
       // Update button text based on visibility state
       this.world.visibilityState.subscribe((visibilityState) => {
+        const obj3D = entity.object3D;
         if (visibilityState === VisibilityState.NonImmersive) {
           xrButton.setProperties({ text: "Enter XR" });
           this.panelInXRMode = false;
+          if (obj3D) obj3D.scale.set(1, 1, 1);
         } else {
           xrButton.setProperties({ text: "Exit XR" });
           this.panelInXRMode = true;
+          if (obj3D) obj3D.scale.set(0.1, 0.1, 0.1);
         }
       });
     });
@@ -101,7 +104,7 @@ export class PanelSystem extends createSystem({
 
             // Position relative to body (no rotation applied)
             this.uiAnchor.position.set(
-              bodyWorldPos.x + 0.6,  // 0.6m to the right
+              bodyWorldPos.x + 0.3,  // 0.3m to the right (moved left from 0.6)
               headWorldPos.y + 0.3,   // 0.3m above head
               bodyWorldPos.z - 1.2    // 1.2m in front
             );

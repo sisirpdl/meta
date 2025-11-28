@@ -119,8 +119,8 @@ World.create(document.getElementById("scene-container") as HTMLDivElement, {
       .createTransformEntity()
       .addComponent(PanelUI, {
         config: "/ui/welcome.json",
-        maxHeight: 0.16,
-        maxWidth: 0.32,
+        maxHeight: 0.8,
+        maxWidth: 1.6,
       })
       .addComponent(Interactable);
     // Don't set initial position - let PanelSystem handle all positioning
