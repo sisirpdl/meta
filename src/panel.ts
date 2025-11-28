@@ -58,11 +58,11 @@ export class PanelSystem extends createSystem({
         if (visibilityState === VisibilityState.NonImmersive) {
           xrButton.setProperties({ text: "Enter XR" });
           this.panelInXRMode = false;
-          if (obj3D) obj3D.scale.set(1.5, 1.5, 1.5);
+          if (obj3D) obj3D.scale.set(2.5, 2.5, 2.5);
         } else {
           xrButton.setProperties({ text: "Exit XR" });
           this.panelInXRMode = true;
-          if (obj3D) obj3D.scale.set(0.08, 0.08, 0.08);
+          if (obj3D) obj3D.scale.set(0.05, 0.05, 0.05);
         }
       });
     });
