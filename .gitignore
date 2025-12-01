@@ -2,7 +2,8 @@
 node_modules/
 
 # IWSDK files
-iwsdk/
+iwsdk docs/
+iwsdk_docs/
 examples/
 
 # Build outputs
