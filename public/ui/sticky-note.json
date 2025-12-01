@@ -19,24 +19,20 @@
         "sourceTag": "div",
         "children": [
           {
-            "sourceTag": "button",
-            "type": "custom",
-            "children": [
-              "Color"
-            ],
+            "type": "image",
+            "sourceTag": "img",
             "properties": {
-              "id": "color-button"
+              "id": "color-button",
+              "src": "/textures/icon-color.png"
             },
             "dataUid": "uid-4"
           },
           {
-            "sourceTag": "button",
-            "type": "custom",
-            "children": [
-              "Delete"
-            ],
+            "type": "image",
+            "sourceTag": "img",
             "properties": {
-              "id": "delete-button"
+              "id": "delete-button",
+              "src": "/textures/icon-trash.png"
             },
             "dataUid": "uid-5"
           }
@@ -68,7 +64,8 @@
       "content": {
         "display": "flex",
         "flexDirection": "row",
-        "justifyContent": "flex-end"
+        "justifyContent": "flex-end",
+        "gap": "0.01"
       }
     },
     "__id__note-content": {
@@ -80,17 +77,15 @@
     },
     "__id__color-button": {
       "content": {
-        "fontSize": "0.015",
-        "color": "#0000ff",
-        "padding": "0.005",
+        "width": "0.02",
+        "height": "0.02",
         "cursor": "pointer"
       }
     },
     "__id__delete-button": {
       "content": {
-        "fontSize": "0.015",
-        "color": "#ff0000",
-        "padding": "0.005",
+        "width": "0.02",
+        "height": "0.02",
         "cursor": "pointer"
       }
     }
@@ -128,11 +123,11 @@
     },
     "__id__color-button": {
       "start": {
-        "line": 22,
+        "line": 23,
         "column": 2
       },
       "end": {
-        "line": 22,
+        "line": 23,
         "column": 15
       }
     },
@@ -148,52 +143,52 @@
     },
     "uid-1": {
       "start": {
-        "line": 36,
+        "line": 35,
         "column": 0
       },
       "end": {
-        "line": 42,
+        "line": 41,
         "column": 6
       }
     },
     "uid-2": {
       "start": {
-        "line": 37,
+        "line": 36,
         "column": 2
       },
       "end": {
-        "line": 37,
+        "line": 36,
         "column": 41
       }
     },
     "uid-3": {
       "start": {
-        "line": 38,
+        "line": 37,
         "column": 2
       },
       "end": {
-        "line": 41,
+        "line": 40,
         "column": 8
       }
     },
     "uid-4": {
       "start": {
-        "line": 39,
+        "line": 38,
         "column": 4
       },
       "end": {
-        "line": 39,
-        "column": 44
+        "line": 38,
+        "column": 60
       }
     },
     "uid-5": {
       "start": {
-        "line": 40,
+        "line": 39,
         "column": 4
       },
       "end": {
-        "line": 40,
-        "column": 46
+        "line": 39,
+        "column": 61
       }
     }
   }

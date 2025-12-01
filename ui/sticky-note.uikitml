@@ -18,27 +18,26 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    gap: 0.01;
   }
   
   #color-button {
-    font-size: 0.015;
-    color: #0000ff;
-    padding: 0.005;
+    width: 0.02;
+    height: 0.02;
     cursor: pointer;
   }
-  
+
   #delete-button {
-    font-size: 0.015;
-    color: #ff0000;
-    padding: 0.005;
+    width: 0.02;
+    height: 0.02;
     cursor: pointer;
   }
 </style>
-<div class="note-container">
+<div id="note-container" class="note-container">
   <text id="note-content">New Note</text>
   <div class="button-container">
-    <button id="color-button">Color</button>
-    <button id="delete-button">Delete</button>
+    <img id="color-button" src="/textures/icon-color.png" />
+    <img id="delete-button" src="/textures/icon-trash.png" />
   </div>
 </div>
 
