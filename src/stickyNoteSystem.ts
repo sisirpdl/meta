@@ -70,17 +70,30 @@ export class StickyNoteSystem extends createSystem({
                 obj3D.userData.originalText = entity.getValue(StickyNote, "content") || "New Note";
             }
 
+            // --- COLOR BUTTON LOGIC ---
             if (colorButton) {
                 colorButton.setProperties({ pointerEvents: 'auto' });
                 colorButton.addEventListener("click", (event: any) => {
                     event?.stopPropagation?.();
                     event?.stopImmediatePropagation?.();
 
+                    console.log("🎨 Color clicked");
+
+                    // 1. Cycle Data
                     this.currentColorIndex = (this.currentColorIndex + 1) % this.colorOptions.length;
                     const newColor = this.colorOptions[this.currentColorIndex];
+
+                    // 2. Update Component
                     entity.setValue(StickyNote, "color", newColor);
+
+                    // 3. Update Visuals
                     this.updateNoteColor(entity, newColor);
+
+                    console.log("  - New color:", newColor);
                 });
+                console.log("✅ Color button listener attached");
+            } else {
+                console.warn("⚠️ Color button not found!");
             }
 
             if (deleteButton) {
@@ -159,6 +172,8 @@ export class StickyNoteSystem extends createSystem({
     }
 
     private updateNoteColor(entity: any, color: string) {
+        console.log("🎨 updateNoteColor called with color:", color);
+
         const colorMap: Record<string, string> = {
             [NoteColor.Yellow]: "#fffacd",
             [NoteColor.Blue]: "#add8e6",
@@ -167,23 +182,36 @@ export class StickyNoteSystem extends createSystem({
             [NoteColor.Purple]: "#e1bee7",
         };
         const hexColor = colorMap[color] || "#fffacd";
+        console.log("  - Hex color:", hexColor);
 
+        // 1. Update UI Panel Background
         const document = PanelDocument.data.document[entity.index] as UIKitDocument;
+        console.log("  - Document found:", !!document);
+
         if (document) {
             const container = document.getElementById("note-container");
+            console.log("  - Container found:", !!container);
+
             if (container) {
                 container.setProperties({ backgroundColor: hexColor });
-            } else if (document.root) {
-                document.root.setProperties({ backgroundColor: hexColor });
+                console.log("  ✅ UI background updated");
+            } else {
+                console.warn("  ⚠️ Container 'note-container' not found!");
             }
         }
 
+        // 2. Update Paper Mesh (The Sibling) - Optional Polish
         const uiObj = entity.object3D;
         const rootObj = uiObj?.parent;
+        console.log("  - Root object found:", !!rootObj);
+
         if (rootObj) {
             const paperMesh = rootObj.children.find((c: any) => c.name === "PaperBackground");
+            console.log("  - Paper mesh found:", !!paperMesh);
+
             if (paperMesh && (paperMesh as any).material) {
                 (paperMesh as any).material.color.set(hexColor);
+                console.log("  ✅ Paper mesh color updated");
             }
         }
     }
