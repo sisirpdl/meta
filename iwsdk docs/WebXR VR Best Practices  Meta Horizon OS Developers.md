@@ -1,0 +1,5 @@
+Updated: Jul 31, 2024
+
+There is a wealth of VR best practice documentation available in the [Distribute](https://developers.meta.com/horizon/distribute/) section of this site. While some of it may be written with native app developers in mind, almost everything there is equally relevant to web developers building VR content that targets Browser. Highlights include extensive [Locomotion](https://developers.meta.com/horizon/design/locomotion-types/) and [Hand Tracking](https://developers.meta.com/horizon/design/hands/) sections.
+
+The [Meta Quest Virtual Reality Check (VRC) Guidelines](https://developers.meta.com/horizon/resources/publish-quest-req/) represent the bar we set for applications that ship in Meta Horizon Store. They are a good reference for what hitting a high quality bar for a VR experience looks like.

@@ -1,0 +1,153 @@
+/* Sticky Note Styles - Glassmorphism Design */
+
+.sticky-note-container {
+    position: relative;
+    width: 200px;
+    min-height: 150px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sticky-note-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+}
+
+/* Color Variants */
+.sticky-note-yellow {
+    background: rgba(255, 250, 205, 0.85);
+    border: 1px solid rgba(255, 235, 59, 0.3);
+}
+
+.sticky-note-blue {
+    background: rgba(173, 216, 230, 0.85);
+    border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.sticky-note-green {
+    background: rgba(200, 230, 201, 0.85);
+    border: 1px solid rgba(129, 199, 132, 0.3);
+}
+
+.sticky-note-pink {
+    background: rgba(248, 187, 208, 0.85);
+    border: 1px solid rgba(244, 143, 177, 0.3);
+}
+
+.sticky-note-purple {
+    background: rgba(225, 190, 231, 0.85);
+    border: 1px solid rgba(186, 104, 200, 0.3);
+}
+
+/* Content Styling */
+.sticky-note-content {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    min-height: 100px;
+    outline: none;
+}
+
+.sticky-note-content:focus {
+    outline: 2px solid rgba(100, 181, 246, 0.5);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Glow Effect on Hover */
+.sticky-note-glow {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.3), rgba(186, 104, 200, 0.3));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.sticky-note-container:hover .sticky-note-glow {
+    opacity: 1;
+}
+
+/* Entrance Animation */
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sticky-note-animate-entrance {
+    animation: popIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pin Indicator */
+.sticky-note-pin {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(244, 67, 54, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Delete Button */
+.sticky-note-delete {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(244, 67, 54, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 16px;
+}
+
+.sticky-note-container:hover .sticky-note-delete {
+    opacity: 1;
+}
+
+.sticky-note-delete:hover {
+    background: rgba(244, 67, 54, 1);
+    transform: scale(1.1);
+}
+
+/* Timestamp */
+.sticky-note-timestamp {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}

@@ -1,0 +1,25 @@
+<style>
+  .exit-container {
+    padding: 2;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 2;
+  }
+
+  #exit-button {
+    padding: 1.5;
+    background-color: #dc2626;
+    color: #fafafa;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #991b1b;
+    font-size: 2.5;
+    font-weight: medium;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<div class="exit-container">
+  <button id="exit-button">Exit to Browser</button>
+</div>

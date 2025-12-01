@@ -1,0 +1,92 @@
+{
+  "element": {
+    "type": "container",
+    "sourceTag": "div",
+    "children": [
+      {
+        "sourceTag": "button",
+        "type": "custom",
+        "children": [
+          "Enter XR"
+        ],
+        "properties": {
+          "id": "xr-button"
+        },
+        "dataUid": "uid-2"
+      }
+    ],
+    "properties": {
+      "class": "panel-container"
+    },
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "panel-container": {
+      "content": {
+        "alignItems": "center",
+        "padding": "0.4",
+        "width": "10",
+        "display": "flex",
+        "flexDirection": "column",
+        "borderRadius": 0.6
+      }
+    },
+    "__id__xr-button": {
+      "content": {
+        "width": "100%",
+        "padding": "0.3",
+        "backgroundColor": "#fafafa",
+        "color": "#09090b",
+        "borderRadius": 0.3,
+        "borderWidth": "0.02",
+        "borderColor": "#e4e4e7",
+        "fontSize": "0.5",
+        "fontWeight": "medium",
+        "textAlign": "center",
+        "cursor": "pointer"
+      }
+    }
+  },
+  "ranges": {
+    "panel-container": {
+      "start": {
+        "line": 1,
+        "column": 2
+      },
+      "end": {
+        "line": 1,
+        "column": 18
+      }
+    },
+    "__id__xr-button": {
+      "start": {
+        "line": 10,
+        "column": 2
+      },
+      "end": {
+        "line": 10,
+        "column": 12
+      }
+    },
+    "uid-1": {
+      "start": {
+        "line": 24,
+        "column": 0
+      },
+      "end": {
+        "line": 26,
+        "column": 6
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 25,
+        "column": 2
+      },
+      "end": {
+        "line": 25,
+        "column": 42
+      }
+    }
+  }
+}

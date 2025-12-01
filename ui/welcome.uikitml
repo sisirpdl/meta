@@ -1,0 +1,27 @@
+<style>
+  .panel-container {
+    align-items: center;
+    padding: 0.4;
+    width: 10;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6;
+  }
+  
+  #xr-button {
+    width: 100%;
+    padding: 0.3;
+    background-color: #fafafa;
+    color: #09090b;
+    border-radius: 0.3;
+    border-width: 0.02;
+    border-color: #e4e4e7;
+    font-size: 0.5;
+    font-weight: medium;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<div class="panel-container">
+  <button id="xr-button">Enter XR</button>
+</div>
