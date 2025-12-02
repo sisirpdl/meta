@@ -12,6 +12,18 @@
     font-size: 0.02;
     color: #000000;
     flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0.001 solid #888888;
+    border-radius: 0.005;
+    padding: 0.005;
+    cursor: pointer;
+    caret-color: transparent;
+  }
+
+  #note-content:focus {
+    border-color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.5);
+    caret-color: transparent;
   }
   
   .button-container {
@@ -34,7 +46,7 @@
   }
 </style>
 <div id="note-container" class="note-container">
-  <text id="note-content">New Note</text>
+  <input id="note-content" type="text" placeholder="write here ..." value="write here ..." />
   <div class="button-container">
     <img id="color-button" src="/textures/icon-color.png" />
     <img id="delete-button" src="/textures/icon-trash.png" />

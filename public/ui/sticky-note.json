@@ -4,13 +4,13 @@
     "sourceTag": "div",
     "children": [
       {
-        "sourceTag": "text",
-        "type": "custom",
-        "children": [
-          "New Note"
-        ],
+        "type": "input",
+        "sourceTag": "input",
         "properties": {
-          "id": "note-content"
+          "id": "note-content",
+          "type": "text",
+          "placeholder": "write here ...",
+          "value": "write here ..."
         },
         "dataUid": "uid-2"
       },
@@ -72,7 +72,18 @@
       "content": {
         "fontSize": "0.02",
         "color": "#000000",
-        "flexGrow": "1"
+        "flexGrow": "1",
+        "backgroundColor": "rgba(255, 255, 255, 0.3)",
+        "border": "0.001 solid #888888",
+        "borderRadius": 0.005,
+        "padding": "0.005",
+        "cursor": "pointer",
+        "caretColor": "transparent",
+        "focus": {
+          "borderColor": "#4CAF50",
+          "backgroundColor": "rgba(255, 255, 255, 0.5)",
+          "caretColor": "transparent"
+        }
       }
     },
     "__id__color-button": {
@@ -103,11 +114,11 @@
     },
     "button-container": {
       "start": {
-        "line": 16,
+        "line": 28,
         "column": 2
       },
       "end": {
-        "line": 16,
+        "line": 28,
         "column": 19
       }
     },
@@ -123,71 +134,71 @@
     },
     "__id__color-button": {
       "start": {
-        "line": 23,
+        "line": 35,
         "column": 2
       },
       "end": {
-        "line": 23,
+        "line": 35,
         "column": 15
       }
     },
     "__id__delete-button": {
       "start": {
-        "line": 29,
+        "line": 41,
         "column": 2
       },
       "end": {
-        "line": 29,
+        "line": 41,
         "column": 16
       }
     },
     "uid-1": {
       "start": {
-        "line": 35,
+        "line": 47,
         "column": 0
       },
       "end": {
-        "line": 41,
+        "line": 53,
         "column": 6
       }
     },
     "uid-2": {
       "start": {
-        "line": 36,
+        "line": 48,
         "column": 2
       },
       "end": {
-        "line": 36,
-        "column": 41
+        "line": 48,
+        "column": 93
       }
     },
     "uid-3": {
       "start": {
-        "line": 37,
+        "line": 49,
         "column": 2
       },
       "end": {
-        "line": 40,
+        "line": 52,
         "column": 8
       }
     },
     "uid-4": {
       "start": {
-        "line": 38,
+        "line": 50,
         "column": 4
       },
       "end": {
-        "line": 38,
+        "line": 50,
         "column": 60
       }
     },
     "uid-5": {
       "start": {
-        "line": 39,
+        "line": 51,
         "column": 4
       },
       "end": {
-        "line": 39,
+        "line": 51,
         "column": 61
       }
     }

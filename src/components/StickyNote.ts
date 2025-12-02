@@ -9,7 +9,7 @@ export const NoteColor = {
 } as const;
 
 export const StickyNote = createComponent("StickyNote", {
-    content: { type: Types.String, default: "New Note" },
+    content: { type: Types.String, default: "write here ..." },
     color: { type: Types.Enum, enum: NoteColor, default: NoteColor.Yellow },
     createdAt: { type: Types.Float32, default: 0 },
     isPinned: { type: Types.Boolean, default: false },
